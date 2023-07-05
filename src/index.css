@@ -10,6 +10,8 @@ h1, h4 {
 .app {
   margin: 5vh;
   border: solid grey 1px;
+  min-height: 90vh;
+  position: relative;
 }
 
 .nav-bar {
@@ -42,4 +44,39 @@ h1, h4 {
   list-style: none;
   gap: 3vw;
   cursor: pointer;
+}
+
+.display {  
+  
+}
+
+.contact {
+}
+
+.contact > ul {
+  list-style: none;
+}
+
+.contact > ul > li {
+  display: flex;
+  align-items: center;
+}
+
+.contact > ul > li > img {
+  max-height: 1.5em;
+}
+
+.home-contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.home-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2em;
+  font-weight: 300;
+  max-width: 20vw;
 }
