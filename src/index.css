@@ -46,20 +46,30 @@ h1, h4 {
   cursor: pointer;
 }
 
+.nav-bar-right > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
 .display {  
-  
+  display: flex;
+  justify-content: center;
 }
 
 .contact {
 }
 
 .contact > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
   list-style: none;
 }
 
 .contact > ul > li {
   display: flex;
   align-items: center;
+  gap: 1vw;
 }
 
 .contact > ul > li > img {
@@ -70,6 +80,7 @@ h1, h4 {
   position: absolute;
   bottom: 0;
   left: 0;
+  min-width: 25vw;
 }
 
 .home-text {
@@ -78,5 +89,5 @@ h1, h4 {
   right: 0;
   font-size: 2em;
   font-weight: 300;
-  max-width: 20vw;
+  max-width: 23vw;
 }
