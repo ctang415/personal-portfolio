@@ -2,14 +2,16 @@
 const Header = () => {
 
     return (
-        <nav>
-            <div>
-                <h2>
+        <nav className="nav-bar">
+            <div className="nav-bar-left">
+                <h1>
                     Carrie Tang
-                </h2>
-                <h6>Software Engineer</h6>
+                </h1>
+                <h4>
+                    Software Engineer
+                </h4>
             </div>
-            <div>
+            <div className="nav-bar-right">
                 <ul>
                     <li>Home</li>
                     <li>Info</li>
