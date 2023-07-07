@@ -2,6 +2,7 @@ import Location from '../Assets/location-black.svg'
 import Email from '../Assets/email-black.svg'
 import LocationLight from '../Assets/location-white.svg'
 import EmailLight from '../Assets/email-white.svg'
+import { Link } from 'react-router-dom'
 
 const Contact = ( {mode} ) => {
     return (
@@ -18,7 +19,7 @@ const Contact = ( {mode} ) => {
                 <li>
                 <i className={ mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}
                 style={{ fontSize: "1.5em"}}></i>
-                    github.com/ctang415
+                    <Link to='../github.com/ctang415' style={ mode === "light" ? { color: "black"} : {color: "white"}}>github.com/ctang415</Link>
                 </li>
             </ul>
         </div>
