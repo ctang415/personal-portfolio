@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Contact from "./Components/Contact";
 import Header from "./Components/Header";
@@ -15,16 +15,16 @@ import Loading from "./Components/Loading";
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
   let location = useLocation();
 
-  /*
+  
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 5000)
   }, [])
-  */
+
 
   const theme = useMemo(
     () =>
@@ -35,15 +35,13 @@ function App() {
       }),
     [mode] 
   );
-  if (loading) {
+{
     return (
-      <Loading loading={loading}/>
-    )
-  } else {
-  return (
+      
     <ThemeProvider theme={theme}>
     <CssBaseline />
-    <div className="app">
+    <Loading loading={loading}/>
+      <div className={ !loading ? "app" : ""}>
       <Header setMode={setMode} mode={mode}
       />
         <TransitionGroup>
@@ -54,7 +52,7 @@ function App() {
       <Routes location={location}>
         <Route path="/" exact element={<Home/>}/>
         <Route path="/info" element={<Information/>}/>
-        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/projects" element={<Projects mode={mode} />}/>
       </Routes>
       </CSSTransition>
       </TransitionGroup>

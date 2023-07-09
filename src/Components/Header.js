@@ -32,7 +32,8 @@ const Header = ( {setMode, mode}) => {
                         </Link>
                     </li>
                     <li>
-                        <img src={ mode === "light" ? Light : Dark} onClick={() => setMode(mode === "light" ? "dark" : "light")}></img>
+                        <img src={ mode === "light" ? Light : Dark} onClick={() => setMode(mode === "light" ? "dark" : "light")} 
+                        alt={ mode === "light" ? "Light" : "Dark"}></img>
                     </li>
                 </ul>
             </div>

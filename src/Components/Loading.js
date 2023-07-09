@@ -1,23 +1,23 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const Loading = ( {loading} ) => {
-    const [copy, setCopy] = useState("initializing ... personal portfolio")
+    const [copy, setCopy] = useState("Carrie \n\n\n\nTang ... initializing \n\n... \n\nportfolio")
 
     if (loading) {
         return (
             <div className="loading-page"> 
-         <span aria-label={copy}>
-          {copy.split("").map( (char, index) => {
-            return  (
-                <span
-                    style={{animationDelay: (0.5 + index / 10) + "s"}}
-                    aria-hidden="true"
-                    key={index}>
-                    {char}
-            </span>
-            )
-          })}
-        </span>
+                <span aria-label={copy}>
+                    {copy.replace(("\n", "\n ")).split("").map( (char, index) => {
+                        return  (
+                            <span
+                            style={{animationDelay: (0.5 + index / 17) + "s"}}
+                            aria-hidden="true"
+                            key={index}>
+                            {char}
+                            </span>
+                        )
+                    })}
+                </span>
             </div>
         )
     }

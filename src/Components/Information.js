@@ -2,7 +2,7 @@
 const Information = () => {
     return (
         <div className="display">
-            Information
+            <h3>Information</h3>
         </div>
     )
 }
