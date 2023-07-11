@@ -256,6 +256,7 @@ h1, h4 {
 .project > img {
   max-width: 15vw;
   border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .project > p {
@@ -285,6 +286,7 @@ h1, h4 {
   border: 1px solid #888;
   padding: 2.5em;
   padding-top: 1em;
+  gap: 1em;
 }
 
 .close {
@@ -296,7 +298,27 @@ h1, h4 {
 }
 
 .pop-up-project > img {
-  max-height: 20em;
+  object-fit: cover;
+  max-width: 44.5vw;
 }
 
+.pop-up-button {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
 
+.dot {
+  border-radius: 1em;
+  padding: 0.3em;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.active {
+  background-color: white;
+  border-radius: 1em;
+  padding: 0.3em;
+  border: 1px solid;
+  cursor: pointer;
+}

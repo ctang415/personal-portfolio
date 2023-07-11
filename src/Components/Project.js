@@ -31,7 +31,7 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
 
     return (
             <div key={x.name}>
-                <Popup x={x} setData={setData} data={data} handleModal={handleModal} name={name} />
+                <Popup mode={mode} x={x} setData={setData} data={data} handleModal={handleModal} name={name} />
             <div className="project" style={ {transform: `translate(-${currentIndex * 100}%)`}}>
                 <h4>
                     {x.name}
