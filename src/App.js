@@ -15,10 +15,10 @@ import Loading from "./Components/Loading";
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
   let location = useLocation();
 
-  
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
@@ -41,7 +41,7 @@ function App() {
     <ThemeProvider theme={theme}>
     <CssBaseline />
     <Loading loading={loading}/>
-      <div className={ !loading ? "app" : ""}>
+      <div className={ !loading && mode === "light" ? "app" : "app-dark"}>
       <Header setMode={setMode} mode={mode}
       />
         <TransitionGroup>

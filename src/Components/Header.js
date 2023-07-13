@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import Light from '../Assets/light-mode.svg'
 import Dark from '../Assets/dark-mode.svg'
 
 const Header = ( {setMode, mode}) => {
+    const location = useLocation()
 
     return (
         <nav className="nav-bar">
@@ -17,17 +18,17 @@ const Header = ( {setMode, mode}) => {
             <div className="nav-bar-right">
                 <ul>
                     <li>
-                        <Link to="/" style={ mode === "dark"  ? {color: "white" } : {color: "" }  }>
+                        <Link to="/" className={ location.pathname === "/" ? "bold" : ""} style={ mode === "dark"  ? {color: "white" } : {color: "" }  }>
                         Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/info" style={ mode === "dark"  ? {color: "white" } : {color: "" }  }>
+                        <Link to="/info" className={ location.pathname === "/info" ? "bold" : ""} style={ mode === "dark" ? {color: "white" } : {color: "" }  }>
                         Info
                         </Link>
                     </li>
                     <li>
-                        <Link to="/projects" style={ mode === "dark"  ? {color: "white" } : {color: "" }  }>
+                        <Link to="/projects" className={location.pathname === "/projects" ? "bold" : ""} style={ mode === "dark" ? {color: "white" } : {color: "" }  }>
                         Projects
                         </Link>
                     </li>

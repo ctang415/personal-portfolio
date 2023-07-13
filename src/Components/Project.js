@@ -26,29 +26,28 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
             })
             setData(x)
         }
-        console.log(name)
     }
 
     return (
-            <div key={x.name}>
-                <Popup mode={mode} x={x} setData={setData} data={data} handleModal={handleModal} name={name} />
-            <div className="project" style={ {transform: `translate(-${currentIndex * 100}%)`}}>
+        <div key={x.name}>
+            <Popup mode={mode} x={x} setData={setData} data={data} handleModal={handleModal} name={name} />
+            <div className={ mode === "dark" ? "project-dark" : "project"} style={{transform: `translate(-${currentIndex * 100}%)`}}>
                 <h4>
                     {x.name}
                 </h4>
                 <img src={x.image} alt={x.name} onClick={handleModal} />
                 <div>
                     {x.info}
-                    <div>
+                    <div style={{fontWeight: "bold"}}>
                         {x.tools}
                         <Link to={x.link} 
-                        style={ mode === "dark" ? {textDecoration: "none", color: "white"} : {textDecoration: "none", color: "black"}}>
-                        <i className={mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}/>
-                    </Link>
+                            style={ mode === "dark" ? {textDecoration: "none", color: "white"} : {textDecoration: "none", color: "black"}}>
+                            <i className={mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}/>
+                        </Link>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     )
 }
 
