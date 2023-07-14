@@ -16,11 +16,32 @@ import Loading from "./Components/Loading";
 function App() {
   const [loading, setLoading] = useState(true)
   const [mode, setMode] = useState("light");
+  const [ mobile, setMobile ] = useState(false)
   let location = useLocation();
 
+  useEffect(() => {
+    function detectMob() {
+      const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+      ];
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+  }
+  detectMob()
+  if (detectMob() === true) {
+    setMobile(true)
+  }
+  }, [location.pathname])
 
   useEffect(() => {
-    setTimeout(() => {
+    setTimeout( () => {
       setLoading(false)
     }, 5000)
   }, [])
@@ -52,11 +73,11 @@ function App() {
       <Routes location={location}>
         <Route path="/" exact element={<Home/>}/>
         <Route path="/info" element={<Information/>}/>
-        <Route path="/projects" element={<Projects mode={mode} />}/>
+        <Route path="/projects" element={<Projects mode={mode} mobile={mobile} />}/>
       </Routes>
       </CSSTransition>
       </TransitionGroup>
-      <div className="home-contact">
+      <div className="home-contact" style={ location.pathname === "/projects" && mobile ? {position: "static"} : {} }>
         <Contact mode={mode} />
       </div>
     </div>

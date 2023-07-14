@@ -6,7 +6,7 @@ const Loading = ( {loading} ) => {
     if (loading) {
         return (
             <div className="loading-page"> 
-                <span aria-label={copy}>
+                <span className="loading-copy" aria-label={copy}>
                     {copy.replace(("\n", "\n ")).split("").map( (char, index) => {
                         return  (
                             <span

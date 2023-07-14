@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"
 import Popup from "./Popup";
+import LinkWhite from "../Assets/link-white.svg"
+import LinkBlack from "../Assets/link-black.svg"
 
 const Project = ( {x, mode, currentIndex, data, setData} ) => {
     const [ name, setName ] = useState('')
@@ -36,13 +38,16 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
                     {x.name}
                 </h4>
                 <img src={x.image} alt={x.name} onClick={handleModal} />
-                <div>
+                <div className="project-info">
                     {x.info}
-                    <div style={{fontWeight: "bold"}}>
+                    <div className="project-tools" style={{fontWeight: "bold"}}>
                         {x.tools}
                         <Link to={x.link} 
                             style={ mode === "dark" ? {textDecoration: "none", color: "white"} : {textDecoration: "none", color: "black"}}>
                             <i className={mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}/>
+                        </Link>
+                        <Link to={x.demo}>
+                            <img src={ mode === "dark" ? LinkWhite : LinkBlack } alt="Link icon"/>
                         </Link>
                     </div>
                 </div>
