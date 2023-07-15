@@ -18,7 +18,7 @@ const Header = ( {setMode, mode}) => {
             <div className="nav-bar-right">
                 <ul>
                     <li>
-                        <Link to="/" className={ location.pathname === "/" ? "bold" : ""} style={ mode === "dark"  ? {color: "white" } : {color: "" }  }>
+                        <Link to="/personal-portfolio" className={ location.pathname === "/" ? "bold" : ""} style={ mode === "dark"  ? {color: "white" } : {color: "" }  }>
                         Home
                         </Link>
                     </li>

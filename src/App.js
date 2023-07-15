@@ -78,7 +78,7 @@ function App() {
           timeout={300}
           classNames="fade">
       <Routes location={location}>
-        <Route path="/" exact element={<Home/>}/>
+        <Route path="/personal-portfolio" element={<Home/>}/>
         <Route path="/info" element={<Information/>}/>
         <Route path="/projects" element={<Projects mode={mode} mobile={mobile} landscape={landscape} />}/>
       </Routes>
