@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.46929ec5.css",
+    "main.js": "/personal-portfolio/static/js/main.9613b486.js",
+    "static/media/waldo-search.png": "/personal-portfolio/static/media/waldo-search.5cc8242d9863beb4c9e3.png",
+    "static/media/waldo-win.png": "/personal-portfolio/static/media/waldo-win.cd67a883f980d6784eae.png",
+    "static/media/waldo-photo-tag.png": "/personal-portfolio/static/media/waldo-photo-tag.579649c85ce4154ce814.png",
+    "static/media/waldo-leaderboard.png": "/personal-portfolio/static/media/waldo-leaderboard.abecee458f94b1141cd1.png",
+    "static/media/weather-app.png": "/personal-portfolio/static/media/weather-app.fa3deb2c317ef991d2a3.png",
+    "static/media/weather-app-alt.png": "/personal-portfolio/static/media/weather-app-alt.5c76ea028a2d104a5b9b.png",
+    "static/media/shopping-cart-products.png": "/personal-portfolio/static/media/shopping-cart-products.05d451c152688fa9d7df.png",
+    "static/media/shopping-cart-home.png": "/personal-portfolio/static/media/shopping-cart-home.7277c1b72ab1571fc4ae.png",
+    "static/media/memory-game.png": "/personal-portfolio/static/media/memory-game.d3708122e4c687298802.png",
+    "static/media/shopping-cart-product.png": "/personal-portfolio/static/media/shopping-cart-product.e71af74bc4a0d91011ec.png",
+    "static/media/freddit-login.png": "/personal-portfolio/static/media/freddit-login.75083bf59e2a6827627c.png",
+    "static/media/freddit-user.png": "/personal-portfolio/static/media/freddit-user.f4c3038ce574aa3562d9.png",
+    "static/media/memory-game-win.png": "/personal-portfolio/static/media/memory-game-win.43eca6abb3817505d7ad.png",
+    "static/media/freddit-home.png": "/personal-portfolio/static/media/freddit-home.fb5b93e5795ee93fd3b3.png",
+    "static/media/freddit-community.png": "/personal-portfolio/static/media/freddit-community.43574926da4d330daf36.png",
+    "static/media/me.jpg": "/personal-portfolio/static/media/me.2653d6b68f6aa28d2666.jpg",
+    "static/media/battleship-gameover.png": "/personal-portfolio/static/media/battleship-gameover.a20624c77a178e73c8da.png",
+    "static/media/battleship-play.png": "/personal-portfolio/static/media/battleship-play.73d1a9ddb3b46024c895.png",
+    "static/media/battleship-home.png": "/personal-portfolio/static/media/battleship-home.febbd8fc5552a4613ca0.png",
+    "static/media/light-mode.svg": "/personal-portfolio/static/media/light-mode.faa5054f62a3976d4e15aa4b7a4f9573.svg",
+    "index.html": "/personal-portfolio/index.html",
+    "static/media/dark-mode.svg": "/personal-portfolio/static/media/dark-mode.a76aff9a222a4780505e689c7257d6e5.svg",
+    "static/media/location-white.svg": "/personal-portfolio/static/media/location-white.7a6b2dddbc5cdc4d0fecd9692efd4caa.svg",
+    "static/media/link-black.svg": "/personal-portfolio/static/media/link-black.561ea8b99a3e7d2339aacac9445422c8.svg",
+    "static/media/link-white.svg": "/personal-portfolio/static/media/link-white.4eb46ae9b0cd6aa1beaf444bb70f5b7b.svg",
+    "static/media/email-white.svg": "/personal-portfolio/static/media/email-white.1136a977c37a9407321e688cda9fba95.svg",
+    "static/media/location-black.svg": "/personal-portfolio/static/media/location-black.8ed820373498e050ba489683231bdef4.svg",
+    "static/media/email-black.svg": "/personal-portfolio/static/media/email-black.c7a364af28c1fc7cbb30013d1a063471.svg",
+    "main.46929ec5.css.map": "/personal-portfolio/static/css/main.46929ec5.css.map",
+    "main.9613b486.js.map": "/personal-portfolio/static/js/main.9613b486.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46929ec5.css",
+    "static/js/main.9613b486.js"
+  ]
+}
