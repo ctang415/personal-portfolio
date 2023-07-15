@@ -46,11 +46,11 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
                     {x.info}
                     <div className="project-tools" style={{fontWeight: "bold"}}>
                         {x.tools}
-                        <div onClick={redirectPage(`${x.link}`)}
+                        <div onClick={() => redirectPage(`${x.link}`)}
                             style={ mode === "dark" ? {textDecoration: "none", color: "white"} : {textDecoration: "none", color: "black"}}>
                             <i className={mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}/>
                         </div>
-                        <div onClick={redirectPage(`${x.demo}`)}>
+                        <div onClick={ () => redirectPage(`${x.demo}`)}>
                             <img src={ mode === "dark" ? LinkWhite : LinkBlack } alt="Link icon"/>
                         </div>
                     </div>
