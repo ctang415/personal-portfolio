@@ -30,6 +30,10 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
         }
     }
 
+    const redirectPage = (link) => {
+        window.open(link, '_blank')
+    }
+
     return (
         <div className="project-page" key={x.name}>
             <Popup mode={mode} x={x} setData={setData} data={data} handleModal={handleModal} name={name} />
@@ -42,14 +46,13 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
                     {x.info}
                     <div className="project-tools" style={{fontWeight: "bold"}}>
                         {x.tools}
-                        <a href={`${x.link}`}
-                            target="_blank" rel='noopener noreferrer'
+                        <div onClick={redirectPage(`${x.link}`)}
                             style={ mode === "dark" ? {textDecoration: "none", color: "white"} : {textDecoration: "none", color: "black"}}>
                             <i className={mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}/>
-                        </a>
-                        <a href={`${x.demo}`} target="_blank" rel='noopener noreferrer'>
+                        </div>
+                        <div onClick={redirectPage(`${x.demo}`)}>
                             <img src={ mode === "dark" ? LinkWhite : LinkBlack } alt="Link icon"/>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
