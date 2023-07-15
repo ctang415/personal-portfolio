@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.8caa8f53.css",
-    "main.js": "/personal-portfolio/static/js/main.222f3623.js",
+    "main.css": "/personal-portfolio/static/css/main.aff8dff0.css",
+    "main.js": "/personal-portfolio/static/js/main.6e209b8a.js",
     "static/media/waldo-search.png": "/personal-portfolio/static/media/waldo-search.5cc8242d9863beb4c9e3.png",
     "static/media/waldo-win.png": "/personal-portfolio/static/media/waldo-win.cd67a883f980d6784eae.png",
     "static/media/waldo-photo-tag.png": "/personal-portfolio/static/media/waldo-photo-tag.579649c85ce4154ce814.png",
@@ -30,11 +30,11 @@
     "static/media/email-white.svg": "/personal-portfolio/static/media/email-white.1136a977c37a9407321e688cda9fba95.svg",
     "static/media/location-black.svg": "/personal-portfolio/static/media/location-black.8ed820373498e050ba489683231bdef4.svg",
     "static/media/email-black.svg": "/personal-portfolio/static/media/email-black.c7a364af28c1fc7cbb30013d1a063471.svg",
-    "main.8caa8f53.css.map": "/personal-portfolio/static/css/main.8caa8f53.css.map",
-    "main.222f3623.js.map": "/personal-portfolio/static/js/main.222f3623.js.map"
+    "main.aff8dff0.css.map": "/personal-portfolio/static/css/main.aff8dff0.css.map",
+    "main.6e209b8a.js.map": "/personal-portfolio/static/js/main.6e209b8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.8caa8f53.css",
-    "static/js/main.222f3623.js"
+    "static/css/main.aff8dff0.css",
+    "static/js/main.6e209b8a.js"
   ]
 }
