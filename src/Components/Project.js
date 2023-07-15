@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"
 import Popup from "./Popup";
 import LinkWhite from "../Assets/link-white.svg"
 import LinkBlack from "../Assets/link-black.svg"
@@ -47,7 +46,7 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
                     <div className="project-tools" style={{fontWeight: "bold"}}>
                         {x.tools}
                         <div onClick={() => redirectPage(`${x.link}`)}
-                            style={ mode === "dark" ? {textDecoration: "none", color: "white"} : {textDecoration: "none", color: "black"}}>
+                            style={ mode === "dark" ? { cursor: "pointer", textDecoration: "none", color: "white"} : { cursor: "pointer", textDecoration: "none", color: "black"}}>
                             <i className={mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}/>
                         </div>
                         <div onClick={ () => redirectPage(`${x.demo}`)}>

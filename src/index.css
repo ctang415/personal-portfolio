@@ -114,6 +114,7 @@ h1, h4 {
 }
 
 .contact > ul > li > div {
+  cursor: pointer;
   text-decoration: none;
   color: black
 }
@@ -891,6 +892,7 @@ h1, h4 {
   }
   
   .contact > ul > li > div {
+    cursor: pointer;
     text-decoration: none;
     color: black
   }
@@ -1333,6 +1335,7 @@ h1, h4 {
   }
   
   .contact > ul > li > div {
+    cursor: pointer;
     text-decoration: none;
     color: black
   }

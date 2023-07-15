@@ -2,7 +2,6 @@ import Location from '../Assets/location-black.svg'
 import Email from '../Assets/email-black.svg'
 import LocationLight from '../Assets/location-white.svg'
 import EmailLight from '../Assets/email-white.svg'
-import { Link } from 'react-router-dom'
 
 const Contact = ( {mode} ) => {
 
