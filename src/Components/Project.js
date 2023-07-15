@@ -42,14 +42,14 @@ const Project = ( {x, mode, currentIndex, data, setData} ) => {
                     {x.info}
                     <div className="project-tools" style={{fontWeight: "bold"}}>
                         {x.tools}
-                        <Link to={{ pathname: `${x.link}` }}
+                        <a href={`${x.link}`}
                             target="_blank" 
                             style={ mode === "dark" ? {textDecoration: "none", color: "white"} : {textDecoration: "none", color: "black"}}>
                             <i className={mode === "dark" ? "devicon-github-original" : "devicon-github-original colored"}/>
-                        </Link>
-                        <Link to={ { pathname: `${x.demo}` } } target="_blank" >
+                        </a>
+                        <a href={`${x.demo}`} target="_blank" >
                             <img src={ mode === "dark" ? LinkWhite : LinkBlack } alt="Link icon"/>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
