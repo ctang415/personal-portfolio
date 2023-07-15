@@ -15,11 +15,7 @@ h1, h4 {
   border: solid grey 1px;
   min-height: 90vh;
   position: relative;
-  animation: opacity-animation 1s ease-in-out 1;
-  /*
-  background-image: radial-gradient(farthest-corner at -50px 70px, white 0%, white 16%, rgb(234, 233, 233) 33%, white 50.5%, rgb(241, 241, 241) 66%, white 80.5%, white 100%);
-  animation: colorChange 8s infinite alternate linear;
-  */
+  animation: opacity-animation 7.5s ease-in-out 1;
 }
 
 .app-dark {
@@ -29,30 +25,9 @@ h1, h4 {
   border: solid grey 1px;
   min-height: 90vh;
   position: relative;
-  /*
-  background: radial-gradient(farthest-corner at 0px 0px, #0b0b0b 0, black 16%, #211f1f 33%, black 50.5%, rgb(35, 35, 35) 66%, black 80.5%, #191919 100%);
-  animation: colorChange 5s infinite alternate linear;
-  */
+  animation: opacity-animation 7.5s ease-in-out 1;
 }
 
-@keyframes colorChange {
-  from { /* radial-gradient(farthest-corner at top right, ..) */
-    background-size:100% 200%;
-  }
-  49.9% {
-    background-position:left top; 
-  }
-  50% { /* radial-gradient(farthest-corner at top center, ..) */
-   background-size: 100% 100%;
-  }
-  50.1% {
-    background-position:right top;
-  }
-  to { /* radial-gradient(farthest-corner at top left, ..) */
-    background-position:right top;
-    background-size:100% 150%;
-  }
- }
 
 .nav-bar {
   display: flex;
@@ -435,7 +410,7 @@ h1, h4 {
     min-height: 90vh;
     overflow: scroll;
     position: relative;
-    animation: opacity-animation 1s ease-in-out 1;
+    animation: opacity-animation 7.5s ease-in-out 1;
     /*
     background-image: radial-gradient(farthest-corner at -50px 70px, white 0%, white 16%, rgb(234, 233, 233) 33%, white 50.5%, rgb(241, 241, 241) 66%, white 80.5%, white 100%);
     animation: colorChange 8s infinite alternate linear;
@@ -450,7 +425,7 @@ h1, h4 {
     min-height: 90vh;
     overflow: scroll;
     position: relative;
-    animation: opacity-animation 1s ease-in-out 1;
+    animation: opacity-animation 7.5s ease-in-out 1;
     /*
     background: radial-gradient(farthest-corner at 0px 0px, #0b0b0b 0, black 16%, #211f1f 33%, black 50.5%, rgb(35, 35, 35) 66%, black 80.5%, #191919 100%);
     animation: colorChange 5s infinite alternate linear;
@@ -785,7 +760,7 @@ h1, h4 {
     border: solid grey 1px;
     max-height: 90vh;
     position: relative;
-    animation: opacity-animation 1s ease-in-out 1;
+    animation: opacity-animation 7.5s ease-in-out 1;
     /*
     background-image: radial-gradient(farthest-corner at -50px 70px, white 0%, white 16%, rgb(234, 233, 233) 33%, white 50.5%, rgb(241, 241, 241) 66%, white 80.5%, white 100%);
     animation: colorChange 8s infinite alternate linear;
@@ -799,7 +774,7 @@ h1, h4 {
     border: solid grey 1px;
     max-height: 90vh;
     position: relative;
-    animation: opacity-animation 1s ease-in-out 1;
+    animation: opacity-animation 7.5s ease-in-out 1;
     /*
     background: radial-gradient(farthest-corner at 0px 0px, #0b0b0b 0, black 16%, #211f1f 33%, black 50.5%, rgb(35, 35, 35) 66%, black 80.5%, #191919 100%);
     animation: colorChange 5s infinite alternate linear;
@@ -1226,7 +1201,7 @@ h1, h4 {
     border: solid grey 1px;
     max-height: 90vh;
     position: relative;
-    animation: opacity-animation 1s ease-in-out 1;
+    animation: opacity-animation 7.5s ease-in-out 1;
     /*
     background-image: radial-gradient(farthest-corner at -50px 70px, white 0%, white 16%, rgb(234, 233, 233) 33%, white 50.5%, rgb(241, 241, 241) 66%, white 80.5%, white 100%);
     animation: colorChange 8s infinite alternate linear;
@@ -1240,7 +1215,7 @@ h1, h4 {
     border: solid grey 1px;
     max-height: 90vh;
     position: relative;
-    animation: opacity-animation 1s ease-in-out 1;
+    animation: opacity-animation 7.5s ease-in-out 1;
     /*
     background: radial-gradient(farthest-corner at 0px 0px, #0b0b0b 0, black 16%, #211f1f 33%, black 50.5%, rgb(35, 35, 35) 66%, black 80.5%, #191919 100%);
     animation: colorChange 5s infinite alternate linear;
