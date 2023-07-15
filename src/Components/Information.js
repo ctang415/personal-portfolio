@@ -6,8 +6,8 @@ const Information = () => {
     return (
         <div className="display">
             <h3>Information</h3>
-                <h4 className="skills">Skills</h4>
-                <div className="info">
+            <h4 className="skills">Skills</h4>
+            <div className="info">
                 {skills.map(skill => {
                     return (
                         <div key={skill} className="skill">
@@ -16,7 +16,7 @@ const Information = () => {
                     )
                 })}
             </div>
-        </div>
+    </div>
     )
 }
 export default Information

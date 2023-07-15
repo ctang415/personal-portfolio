@@ -9,6 +9,7 @@ const Home = () => {
             <div className="home-text">
                 Self-taught developer.
                 Front-end experienced.
+                Open to new challenges.
             </div>
         </div>
     )

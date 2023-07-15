@@ -17,6 +17,7 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [mode, setMode] = useState("light");
   const [ mobile, setMobile ] = useState(false)
+  const [ landscape, setLandscape ] = useState(false)
   let location = useLocation();
 
   useEffect(() => {
@@ -38,7 +39,13 @@ function App() {
   if (detectMob() === true) {
     setMobile(true)
   }
-  }, [location.pathname])
+  }, [])
+
+  useEffect(() => {
+    if ((window.matchMedia("(orientation: landscape)").matches)) {
+    setLandscape(true)
+    }
+  }, [])
 
   useEffect(() => {
     setTimeout( () => {
@@ -73,7 +80,7 @@ function App() {
       <Routes location={location}>
         <Route path="/" exact element={<Home/>}/>
         <Route path="/info" element={<Information/>}/>
-        <Route path="/projects" element={<Projects mode={mode} mobile={mobile} />}/>
+        <Route path="/projects" element={<Projects mode={mode} mobile={mobile} landscape={landscape} />}/>
       </Routes>
       </CSSTransition>
       </TransitionGroup>

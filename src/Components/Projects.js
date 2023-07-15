@@ -19,7 +19,7 @@ import ShoppingProduct from "../Assets/Shopping-Cart/shopping-cart-product.png"
 import { useState } from "react"
 import Project from "./Project"
 
-const Projects = ( {mode, mobile} ) => {
+const Projects = ( {mode, mobile, landscape} ) => {
     const [ data, setData ] = useState([ 
     { modal: false, name: "Freddit", image: FredditHome, info: "Mobile-responsive clone of Reddit with CRUD functionality", 
     tools: "ReactJS, Firebase ", link: "../https://github.com/ctang415/reddit-clone", demo: "../reddit-clone-e4070.web.app/", 
@@ -69,12 +69,12 @@ const Projects = ( {mode, mobile} ) => {
             <div className="projects-container">
                 {data.map( (x, index) => { 
                     return (
-                        <Project key={index} index={index} data={data} setData={setData} x={x} mode={mode} 
+                        <Project landscape={landscape} key={index} index={index} data={data} setData={setData} x={x} mode={mode} 
                         currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
                     )}
                 )}
             </div>
-            <div className={ mobile ? "none" : "pop-up-button"}>
+            <div className={ mobile && !landscape ? "none" : "pop-up-button"}>
                 <div className={ active ? "active" : "dot"} style={ mode === "light" && active ? { border: " solid 1px black", backgroundColor: "black"} : {}} onClick={() => setSlide(0)}/>
                 <div className={ !active ? "active" : "dot"} style={ mode === "light" && !active ? { border: " solid 1px black", backgroundColor: "black"}: {}} onClick={() => setSlide(3.4)}/>
             </div>
