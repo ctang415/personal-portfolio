@@ -113,7 +113,7 @@ h1, h4 {
   gap: 1vw;
 }
 
-.contact > ul > li > a {
+.contact > ul > li > div {
   text-decoration: none;
   color: black
 }
@@ -391,7 +391,9 @@ h1, h4 {
   gap: 0.3em;
 }
 
-.project-tools > a > img {
+
+.project-tools > div > img {
+  cursor: pointer;
   max-height: 1.45em;
 }
 
@@ -734,7 +736,8 @@ h1, h4 {
     gap: 0.3em;
   }
 
-  .project-tools > a > img {
+  .project-tools > div > img {
+    cursor: pointer;
     max-height: 1em;
   }
 }
@@ -887,7 +890,7 @@ h1, h4 {
     white-space: nowrap;
   }
   
-  .contact > ul > li > a {
+  .contact > ul > li > div {
     text-decoration: none;
     color: black
   }
@@ -1173,7 +1176,8 @@ h1, h4 {
     gap: 0.3em;
   }
   
-  .project-tools > a > img {
+  .project-tools > div > img {
+    cursor: pointer;
     max-height: 1.45em;
   }
   
@@ -1328,7 +1332,7 @@ h1, h4 {
     white-space: nowrap;
   }
   
-  .contact > ul > li > a {
+  .contact > ul > li > div {
     text-decoration: none;
     color: black
   }
@@ -1614,7 +1618,8 @@ h1, h4 {
     gap: 0.3em;
   }
   
-  .project-tools > a > img {
+  .project-tools > div > img {
+    cursor: pointer;
     max-height: 1.45em;
   }
   
